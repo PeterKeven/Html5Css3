@@ -5,6 +5,13 @@ Folha de estilo do site One page HTML5 e CSS3
 
 */
 
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 /* Smartphone landscape */
 
 @media (min-width: 576px) {
