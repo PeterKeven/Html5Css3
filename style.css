@@ -26,8 +26,84 @@ body {
 
 .conteiner {
 
-    margin: 0auto;
-    background-color: #7f0;
+    margin: 0 auto;
+
+
+}
+
+.Flex {
+display: flex;
+justify-content: space-between;
+}
+
+
+
+/* Topo do site */
+
+#topo {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+/* Smartphone portrait */
+
+/* Cabeçalho */
+header {
+
+height: 60px;
+
+}
+
+#logo img {
+
+width: 128px;
+height: 128px;
+}
+
+#check {
+
+    display: none;
+
+}
+
+label {
+
+    font-size: 3em;
+    padding: 15px;
+
+}
+
+nav ul {
+
+list-style: none;
+background-color: #343538;
+height: 100vh;
+position: fixed;
+top: 60px;
+right: -100%;
+width: 100%;
+transition: all 0.5s;
+}
+
+#check:checked ~ ul {
+
+right: 0%;
+
+}
+
+nav ul li {
+
+    padding: 20px;
+    border-bottom: 1px solid #a9a9a9a9;
+
+
+}
+
+nav ul li a {
+
+    text-decoration: none;
+    color: #fff;
 
 }
 
@@ -35,9 +111,7 @@ body {
 
 @media (min-width: 576px) {
 
-    body{
-        background-color: #ff0000;
-        }
+
 
         /* Layout */
 
@@ -53,9 +127,7 @@ body {
 
 @media (min-width: 768px) {
 
-    body{
-        background-color: #00ff4c;
-        }
+    
 
         /* Layout */
 
@@ -71,10 +143,7 @@ body {
 
 @media (min-width: 992px) {
 
-    body{
-        background-color: #0400ff;
-        }
-
+    
         /* Layout */
 
         .conteiner {
@@ -89,15 +158,52 @@ body {
 
 @media (min-width: 1200px) {
 
-    body{
-        background-color: #00ffdd;
-        }
+    
 
         /* Layout */
 
         .conteiner {
-
             max-width: 1140px;
+        }
+
+        header {
+            height: 128px;
+        }
+
+        #logo img {
+            width: 189px;
+            height: 189px;
+            margin-top: 30px;
+        }
+
+        label {
+
+            display: none;
+        }
+
+        nav ul {
+
+            position: static;
+            height: auto;
+            background-color: transparent;
+            margin-top: 50px;
+        }
+
+        nav ul li {
+            float: left;
+            border: 0;
+
+        }
+
+        nav ul li a {
+
+            color: #343538;
+
+        }
+
+        nav ul li a:hover {
+
+            color: #c00000;
 
         }
 

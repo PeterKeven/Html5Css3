@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,29 +9,43 @@
     <meta name="Description" content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae aperiam aspernatur ex temporibus asperiores rerum consequatur illo, aliquam
      eius vero eum nobis possimus aliquid inventore
       quos facilis? Vel, harum dolore.">
-      <link rel="icon" href="Img/Favicon.ico">
-      <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Img/favicon.png">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Cabeçalho -->
 
-    <header>
-        <div class="conteiner">
-
+    <header id="inicio">
+        <div class="conteiner Flex">
+            <div id="logo">
+                <img src="img/logo.png" alt="hal 9000">
+            </div>
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check">&#x268C;</label>
+            
+            <ul>
+                <li><a href="#inicio">inicio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#conteudo">Conteúdo</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            </nav>        
         </div>
     </header>
     <!-- Destaque -->
-    
+
     <main>
         <div class="conteiner">
             <h1>HTML5 e CSS3</h1>
             <h2>Você faz, Você vê. Você aprende</h2>
         </div>
-        
+
     </main>
     <!-- Sobre -->
 
-    <section>
+    <section id="sobre">
         <div class="conteiner">
             <h2>Aprender na pratica</h2>
         </div>
@@ -42,7 +57,7 @@
         <div class="conteiner">
             <h2>One page site</h2>
         </div>
-        
+
     </section>
     <!-- Wireframe -->
 
@@ -54,7 +69,7 @@
     </section>
     <!-- Conteudo -->
 
-    <section>
+    <section id="conteudo">
         <div class="conteiner">
             <h2>Conteudo</h2>
             <h3>HTML5</h3>
@@ -65,10 +80,13 @@
     </section>
     <!-- Rodapé -->
 
-    <footer>
+    <footer id="contato">
         <div class="conteiner"></div>
     </footer>
+     
+    <a href="#inicio" id="topo"><img src="Img/topo.png" alt="topo do site"></a>
 
-
+    
 </body>
+
 </html>
